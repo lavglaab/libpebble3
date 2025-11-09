@@ -201,6 +201,8 @@ fun StatusBarNotification.icon(): TimelineIcon = when (packageName) {
     "com.google.android.apps.walletnfcrel" -> TimelineIcon.PayBill
     "com.google.android.youtube" -> TimelineIcon.TvShow // Use until the YouTube icon is in the fw repo
     "app.revanced.android.youtube" -> TimelineIcon.TvShow // Use until the YouTube icon is in the fw repo
+    "com.beeper.android" -> TimelineIcon.NotificationBeeper
+    "com.discord" -> TimelineIcon.NotificationDiscord
 
     else -> when (notification.category) {
         Notification.CATEGORY_EMAIL -> TimelineIcon.GenericEmail

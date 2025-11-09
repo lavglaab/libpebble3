@@ -102,7 +102,9 @@ enum class TimelineIcon(val id: UInt) {
     AlarmClock(13u),
     HeavySnow(53u),
     DinnerReservation(27u),
-    NotificationKakaoTalk(79u);
+    NotificationKakaoTalk(79u),
+    NotificationBeeper(120u),
+    NotificationDiscord(121u);
 
     companion object {
         fun fromId(id: UInt): TimelineIcon {
